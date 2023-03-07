@@ -1,0 +1,156 @@
+.comment-card .comment-actions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.comment-card {
+  width: 100%;
+}
+.comment-reply {
+  padding-left: 20px;
+}
+.comment-card .comment-content {
+  width: 100%;
+}
+.comment-card .comment-content textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: gainsboro;
+}
+.comment-card .comment-actions small a:hover,
+.comment-card .user-detail a:hover {
+  color: black;
+}
+.comment-card .user-detail a img {
+  border-radius: 20px;
+}
+.comment-wrapper {
+  border-top: 1px solid gainsboro;
+}
+.comment-card {
+  padding-top: 8px;
+}
+.comment-wrapper .comment-heart {
+  margin-top: 8px;
+}
+
+/*comment-modal*/
+.comment-modal-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0008;
+  z-index: 999;
+}
+.comment-modal-wrapper .comment-modal {
+  width: 70%;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  height: 630px;
+  background-color: white;
+  align-items: center;
+}
+.comment-modal-wrapper .comment-modal .post-image {
+  height: 100%;
+  width: 50%;
+}
+.comment-modal-wrapper .comment-modal .post-content {
+  height: 600px;
+  width: 50%;
+}
+.comment-modal-wrapper .comment-modal .post-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+.comment-modal-wrapper .comment-modal .post-scrollable {
+  overflow-y: auto;
+  height: 500px;
+  width: 100%;
+}
+.comment-modal-wrapper .comment-modal .post-content .post-header {
+  border-bottom: 1px solid gainsboro;
+}
+.comment-modal-wrapper .comment-modal .post-content .post-header .left img {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+.comment-modal-wrapper .comment-modal .post-content .post-header .left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.close-comment-modal {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+.comment-modal-wrapper .comment-modal .post-footer .post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.comment-modal-wrapper .comment-modal .post-footer {
+  border-top: 1px solid gainsboro;
+}
+.comment-modal-wrapper .comment-modal .post-footer .post-actions .like-comment {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.comment-modal-wrapper
+  .comment-modal
+  .post-footer
+  .post-actions
+  .like-comment
+  p {
+  margin: 0;
+}
+.comment-modal-wrapper .comment-modal .post-footer .post-actions .comment-save {
+  padding-right: 8px;
+}
+
+@media only screen and (max-width: 620px) {
+  .comment-modal-wrapper .comment-modal {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    height: 620px;
+    background-color: white;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .comment-modal-wrapper .comment-modal .post-image {
+    height: 100%;
+    width: 50%;
+    display: none;
+  }
+  .comment-modal-wrapper .comment-modal .post-content {
+    height: 100%;
+    width: 100%;
+  }
+  .comment-modal-wrapper .comment-modal .post-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .comment-modal-wrapper .comment-modal .post-scrollable {
+    overflow-y: auto;
+    height: 500px;
+    width: 100%;
+  }
+  .close-comment-modal {
+    color: white;
+  }
+}

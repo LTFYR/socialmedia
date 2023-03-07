@@ -1,0 +1,7 @@
+export const GLOBALACTIONS = {
+  AUTH: "AUTH",
+  NOTIFY: "NOTIFY",
+  THEME: "THEME",
+  STATUS: "STATUS",
+  MODAL: "MODAL",
+};

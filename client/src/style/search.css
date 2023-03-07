@@ -1,0 +1,35 @@
+/* user */
+.user {
+  display: flex;
+  padding: 0 14px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.user .user-detail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.user-detail .about p {
+  margin: 0;
+  padding: 0;
+}
+.users .about p {
+  margin: 0;
+  padding: 0;
+}
+.user button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  border: none;
+  background-color: transparent;
+  height: 20px;
+}
+/*search res */
+.search-results {
+  display: flex;
+  flex-direction: column;
+}

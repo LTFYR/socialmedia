@@ -1,0 +1,47 @@
+.explore {
+  width: 800px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.explore .explore-images {
+  width: 250px;
+  height: 220px;
+}
+.explore .explore-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 720px) {
+  .explore {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .explore .explore-images {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+  }
+  .explore .explore-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border: 1px solid gainsboro;
+  }
+}

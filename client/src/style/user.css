@@ -1,0 +1,223 @@
+.user-profile {
+  width: 800px;
+  margin: 0 auto;
+}
+.user-info-header .image img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.user-info-header {
+  display: flex;
+  /* align-items: center; */
+  margin-top: 40px;
+  height: 200px;
+  justify-content: center;
+  gap: 20px;
+}
+.user-info-header .image img {
+  border-radius: 50%;
+}
+
+.user-info-header .user-info-content .user-action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info-header .user-info-content button {
+  /* width: 50px;
+  height: 20px; */
+}
+.user-info-header .user-info-content .about {
+  width: 100%;
+}
+.user-info-header .user-info-content .follow-status {
+  display: flex;
+  gap: 20px;
+}
+.user-info-header .user-info-content .follow-status h2 {
+  font-size: 16px;
+}
+
+/*update profile */
+.update-profile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: auto;
+  overflow: auto;
+  background-color: #0007;
+}
+.update-profile form {
+  max-width: 450px;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 40px auto;
+}
+.update-profile .closeEdit {
+  position: relative;
+  left: 60%;
+  top: 100px;
+}
+.update-profile .image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.update-profile .image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+.update-profile .image span {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  text-align: center;
+  color: red;
+  font-weight: 700;
+  transition: 0.4s ease-in-out;
+}
+.update-profile .image #download {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.update-profile .image:hover span {
+  bottom: 0%;
+  opacity: 1;
+}
+.update-profile .info .fullname {
+  position: relative;
+}
+.update-profile .info .fullname small {
+  position: absolute;
+  top: 68%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+/*followers*/
+.follow-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0009;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.followers {
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+  flex-direction: column;
+  border: 1px solid gainsboro;
+  padding: 20px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.follower {
+  display: flex;
+  flex-direction: column;
+}
+.follower .close-followers p {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  width: 40px;
+  text-align: center;
+  top: 0;
+}
+.follower .close-following p {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  width: 40px;
+  text-align: center;
+  top: 0;
+}
+.follower .change-user {
+  display: flex;
+}
+
+/*user*/
+.user_container {
+  display: flex;
+}
+.user_container .user {
+  width: 100%;
+}
+
+/*followbtn*/
+.follow-user {
+  height: 40px;
+}
+
+.unfollow-user {
+  height: 40px;
+}
+
+/*user-post-tab*/
+.user-tab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+}
+.user-tab button {
+  border: none;
+  outline: none;
+  background: white;
+  font-weight: bold;
+  font: 18px;
+  padding: 6px 20px;
+  margin: 0 24px;
+  opacity: 0.6;
+}
+.user-tab button.activetab {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  opacity: 1;
+}
+@media only screen and (max-width: 720px) {
+  .user-profile {
+    margin-top: 30px;
+  }
+  .user-info-header .image img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  .user-posts {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+}

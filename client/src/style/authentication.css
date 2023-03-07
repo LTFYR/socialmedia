@@ -1,0 +1,13 @@
+.login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.login form {
+  padding: 20px;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+}

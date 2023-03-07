@@ -1,0 +1,177 @@
+.posts {
+  width: 100%;
+}
+.posts .post {
+  width: 520px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgb(200, 199, 199);
+  padding: 14px;
+}
+.post_header {
+  display: flex;
+  gap: 8px;
+}
+.post_header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.post_header .post-name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post_header .post-name .user-detail {
+  display: flex;
+  gap: 8px;
+}
+.dropdown button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 24px;
+}
+.dropdown button:hover {
+  background-color: transparent;
+  color: black;
+}
+.dropdown button::after {
+  display: none;
+  background-color: transparent;
+}
+.dropdown button:enabled,
+.dropdown button:active {
+  background-color: white !important;
+  color: black;
+}
+.dropdown .dropdown-menu {
+  position: absolute;
+  left: -110px !important;
+}
+.dropdown .dropdown-menu .dropdown-item {
+  display: flex;
+  gap: 12px;
+}
+.post-body .post-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post-body .post-action .like {
+  display: flex;
+  gap: 20px;
+}
+.post-body .post-action svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+.post-body .actions .liked-by {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.post-body .actions .liked-by img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+}
+.post-body .actions .liked-by span {
+  display: flex;
+  height: 16px;
+  gap: 4px;
+}
+.single-post {
+  width: 500px;
+}
+.post-body .post-image {
+  width: 500px;
+  min-height: 300px;
+}
+.post-footer {
+}
+.post-footer .post-details {
+  margin-bottom: 12px;
+}
+.post-footer input {
+  border: none;
+  width: 100%;
+}
+.epr-main {
+  width: 100% !important;
+}
+.post-footer .comments svg {
+  cursor: pointer;
+}
+.post-footer input:focus {
+  outline: none;
+  border: none;
+}
+.post-footer .comments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*carousel*/
+.carousel-custom img {
+  height: 300px;
+  margin-bottom: 20px;
+  object-fit: fill;
+}
+
+/*userposts*/
+.user-posts {
+  display: flex;
+  margin-left: 40px;
+  position: relative;
+  gap: 32px;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid gainsboro;
+  padding-top: 8px;
+  flex-wrap: wrap;
+}
+.user-posts .post-detail {
+  position: relative;
+  width: 30%;
+}
+.user-posts img {
+  width: 100%;
+  height: 240px;
+  border: 1px solid #0003;
+  object-fit: fill;
+}
+.user-posts .user-post-options {
+  color: white;
+  display: flex;
+  gap: 22px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  display: none;
+}
+.user-posts .post-detail:hover .user-post-options {
+  display: flex;
+}
+
+/*mobile*/
+@media only screen and (max-width: 620px) {
+  .post {
+    width: 100% !important;
+  }
+  .post .post-image {
+    width: 100%;
+  }
+  .user-posts {
+    gap: 14px;
+  }
+  .user-posts .post-detail {
+    position: relative;
+    width: 45%;
+  }
+  .user-posts .post-detail img {
+    height: 200px;
+  }
+}

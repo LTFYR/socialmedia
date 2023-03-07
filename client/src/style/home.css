@@ -1,0 +1,197 @@
+.homepage {
+  padding-top: 8px;
+  width: 520px;
+  margin: 0 auto;
+}
+
+/*status*/
+.status {
+  display: flex;
+  background-color: white;
+  box-shadow: 0 0 10px rgb(200, 199, 199);
+  padding: 20px;
+  position: relative;
+  border-radius: 6px;
+  width: 520px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.status img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.status .status-btn {
+  margin: 0 6px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  text-align: left;
+  background-color: rgb(240, 232, 232);
+  background-color: rgba(231, 229, 229, 0.65);
+  border-radius: 28px;
+}
+.status .status-btn:hover {
+  background-color: gainsboro;
+}
+
+/*status*/
+.status-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0009;
+  z-index: 99;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+.status-modal form {
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+.status-modal form .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  margin-bottom: 14px;
+}
+
+.status-modal form .body textarea {
+  width: 100%;
+  min-height: 140px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.status-modal form .body .images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-modal form .body .images .icon {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.status-modal form .body .upload-icon {
+  font-size: 1rem;
+  cursor: pointer !important;
+}
+
+.status-modal form .body .images .upload-img {
+  overflow: hidden;
+  margin: 0 10px;
+  position: relative;
+}
+
+.status-modal form .body .images .upload-img #file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.status-modal form .footer button {
+  width: 100%;
+}
+
+.status-modal .modal-close {
+  cursor: pointer;
+}
+
+.status-modal .body .uploaded_images {
+  max-height: 250px;
+  width: 100%;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  place-items: center;
+  padding: 10px 0;
+  grid-gap: 10px;
+}
+.status-modal .body .uploaded_images .uploaded_image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.status-modal .body .uploaded_images .uploaded_image img {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.status-modal .body .uploaded_images .uploaded_image span {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  padding: 2px;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid red;
+  color: red;
+  font-size: 12px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.status-modal .body .video {
+  position: relative;
+}
+.status-modal .body .video span {
+  position: absolute;
+  top: 0px;
+  right: 6px;
+  color: red;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/*comment*/
+
+.post-footer .comments {
+  display: block !important;
+}
+.comment-post {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.comment-post input {
+  border: none;
+  padding: 8px;
+}
+.comment-post button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  color: blue;
+}
+.post-footer .comments small {
+  cursor: pointer;
+}
+.comment-modal-post {
+}
+
+/*mobile*/
+@media only screen and (max-width: 620px) {
+  .status {
+    width: 100%;
+    margin-top: 40px;
+  }
+}

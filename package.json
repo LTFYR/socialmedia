@@ -1,0 +1,21 @@
+{
+  "name": "socialmediaapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd server && npm install && cd ../frontent && npm install && npm run build",
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LTFYR/socialmedia.git"
+  },
+  "author": "neoN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LTFYR/socialmedia/issues"
+  },
+  "homepage": "https://github.com/LTFYR/socialmedia#readme"
+}
